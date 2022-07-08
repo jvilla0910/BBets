@@ -1,6 +1,6 @@
 ---
 title: "Brownlows Bets"
-author: "Your Name Goes Here"
+author: "Jessica Villa"
 output: 
   html_document:
     number_sections: true
@@ -36,9 +36,34 @@ There are 3 questions and there should be at least 3 separate commits, at least 
 
 The function will be given a class_size by number of students, odds, and Number_of_times brownlow made the bet.  It will give you back how much Brownlows earnings were. We will use it to answer our three questions below. If you can, improve this function by giving default values to some of its inputs. 
 
+## Return with 35 Students, 2:1 paid out
+
+```{r}
+urn = 1:365
+
+saveBank = vector('numeric')
+
+for(k in 1:40){
+  bank=0
+for(i in 1:637){
+  class = sample(urn, size=35, replace=TRUE)
+if (length(unique(class))== 35) {
+  bank = bank - 2
+}else{
+  bank = bank + 1
+}
+
+}
+saveBank[k] = bank
+}
+
+hist(saveBank)
+```
+
 # In the class and payoff as described  If you highered 40 brownlow substitute teachers to do the same thing that Brownlow did then.
 ## what is their average earnings
 ## the standard deviation and a 95% confidence interval for their earnings?
+
   
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
 
