@@ -60,8 +60,39 @@ saveBank[k] = bank
 hist(saveBank)
 ```
 
-## Question 1 find fair odds  
+# In the class and payoff as described  If you highered 40 brownlow substitute teachers to do the same thing that Brownlow did then.
+## what is their average earnings
+## the standard deviation and a 95% confidence interval for their earnings?
 
+## Question 1  
+
+```{r}
+numClass = 35 
+#my guess at fair odds = $2 :$1
+odds = 2
+countoDo = 637 
+
+
+saveBank = vector('numeric')
+
+for (k in 1:40){
+  bank = (BrLw(numClass,odds,countoDo))
+  saveBank[k] = bank
+}
+
+print(mean(saveBank))
+hist(saveBank)
+
+```
+
+
+  
+<!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
+
+
+# What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
+
+## Question 2 Fair Odds
 
 ```{r}
 numClass = 35
@@ -79,18 +110,7 @@ print(mean(saveBank))
 hist(saveBank)
 ```
 
-To make the game fair, Brownlow should pay out 'r mean(saveBank)'
-
-# In the class and payoff as described  If you highered 40 brownlow substitute teachers to do the same thing that Brownlow did then.
-## what is their average earnings
-## the standard deviation and a 95% confidence interval for their earnings?
-
-  
-<!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
-
-
-# What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
-
+To make the game fair, Brownlow should pay out 'r mean(saveBank).' The score is -2.86. 
 
 <!--Decide on your methods:  In this section explain the approach you will take to attack the issue --- how will you decide on a likely estimate of professor Brownlow's earnings or losses after 637 bets. Also explain how you construct a 95% confidence interval about your estimate of his winnings !-->
 
@@ -99,12 +119,30 @@ To make the game fair, Brownlow should pay out 'r mean(saveBank)'
 
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
 
+## Question 3
+
+
+
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
 
+```{r}
+numClass = 28
+# my guess at fair odds = $xxx :$1
+odds = 2
+countoDo = 637
 
+saveBank = vector('numeric')
 
+for(k in 1:40){ 
+ bank = (BrLw(numClass,odds,countoDo))  
+ saveBank[k] = bank
+}
+print(mean(saveBank))
+hist(saveBank)
+```
 
+For the odds to be fair for the 2:1 within the class size. The class size has to be 28 for 'r numClass.' The score is -16.475. 
 
 
 
