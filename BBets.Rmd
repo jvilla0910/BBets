@@ -121,7 +121,8 @@ print(mean(saveBank))
 hist(saveBank)
 ```
 
-To make the game fair, Brownlow should pay out 'r mean(saveBank).' The score is -2.86. 
+The odds ratio I used is 5.03125 to 1. 
+
 
 <!--Decide on your methods:  In this section explain the approach you will take to attack the issue --- how will you decide on a likely estimate of professor Brownlow's earnings or losses after 637 bets. Also explain how you construct a 95% confidence interval about your estimate of his winnings !-->
 
