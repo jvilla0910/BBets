@@ -154,10 +154,7 @@ print(mean(saveBank))
 hist(saveBank)
 ```
 
-For the odds to be fair for the 2:1 within the class size. The class size has to be 28 for 'r numClass.' The score is -16.475. 
-
-
-
+A size of 28 classmates will make the 2:1 bet fair. Since I got my lowest score with this number. Dr.Brownlow lost on average `r mean(saveBank)`
 
 # Discussion and Conclusion
 
