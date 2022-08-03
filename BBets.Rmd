@@ -84,6 +84,7 @@ print(mean(saveBank))
 hist(saveBank)
 
 ```
+
 ```{r}
 saveBank
 LCL = mean(saveBank) - 2*sd(saveBank)
@@ -95,7 +96,7 @@ print(UCL)
 sd(saveBank)
 ```
 
-When 40 Dr.Brownlow substitutes try this, the average mean is $280 in profit. The confidence interval is between 218 and 341. The standard deviation is 30.61815.
+When 40 Dr.Brownlow substitutes try this, the average mean is $280 in profit. The confidence interval is between 224 & 338. The standard deviation is 31 if rounded to the whole number.
   
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
 
